@@ -1,0 +1,44 @@
+.movie-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input > label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input > textarea {
+  height: 5rem;
+  outline: none;
+  border: 1px solid #7d7d7d;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.input > textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

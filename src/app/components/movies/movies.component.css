@@ -1,0 +1,14 @@
+.thumbnail {
+  width: 100px;
+  margin: 1rem;
+}
+
+.mat-column-overview {
+  flex: 2;
+}
+
+.mat-column-edit-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

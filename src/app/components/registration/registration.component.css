@@ -1,0 +1,23 @@
+.form-card {
+  max-width: 40rem;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.form-card__heading {
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-card__btn-box {
+  width: 100%;
+  text-align: center;
+}
+
+.form-card__btn {
+  width: 10rem;
+  margin-top: 1.25rem;
+}

@@ -1,0 +1,32 @@
+<div class="map-inputs">
+    <h1 class="map-heading">Please input coordinates</h1>
+    <div class="map-form" [formGroup]='mapForm'>
+        <div class="lats">
+            <label class="form-label" for="input1">Latitude 1</label>
+            <input class="form-control" type="text" id="input1" formControlName='lat1'>
+            <label class="form-label" for="input2">Latitude 2</label>
+            <input class="form-control" type="text" id="input2" formControlName='lat2'>
+            <label class="form-label" for="input3">Latitude 3</label>
+            <input class="form-control" type="text" id="input3" formControlName='lat3'>
+            <label class="form-label" for="input4">Latitude 4</label>
+            <input class="form-control" type="text" id="input4" formControlName='lat4'>
+        </div>
+        <div class="lngs">
+            <label class="form-label" for="input5">Longitude 1</label>
+            <input class="form-control" type="text" id="input5" formControlName='lng1'>
+            <label class="form-label" for="input6">Longitude 2</label>
+            <input class="form-control" type="text" id="input6" formControlName='lng2'>
+            <label class="form-label" for="input7">Longitude 3</label>
+            <input class="form-control" type="text" id="input7" formControlName='lng3'>
+            <label class="form-label" for="input8">Longitude 4</label>
+            <input class="form-control" type="text" id="input8" formControlName='lng4'>
+        </div>
+    </div>
+    <button class="map-button" mat-raised-button (click)="handleFormSubmit()">Submit</button>
+</div>
+
+<div *ngIf="apiLoaded | async">
+    <google-map height="90vh" width="100%" [center]="center" [zoom]="zoom">
+        <map-polygon [paths]="vertices"></map-polygon>
+    </google-map>
+</div>

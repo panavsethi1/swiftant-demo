@@ -1,0 +1,16 @@
+<div class="movie-details">
+
+    <img class="thumbnail" [src]="'https://image.tmdb.org/t/p/w500'+data.poster_path">
+    <div class="movie-details__text">
+        <h1 class="title">{{data.title}}</h1>
+        <p class="release">Release: {{data.release_date}}</p>
+        <p class="rating">Rating: {{data.vote_average}}</p>
+    </div>
+</div>
+<div class="input">
+    <label for="edit">Edit overview</label>
+    <textarea id="edit" [(ngModel)]='data.overview'></textarea>
+</div>
+<div class="close">
+    <button mat-dialog-close mat-raised-button>Done</button>
+</div>

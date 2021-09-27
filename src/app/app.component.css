@@ -1,0 +1,28 @@
+.toolbar__heading {
+  font-size: 1.5rem;
+}
+
+.spacer {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.lang-select {
+  margin-right: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(00, 00, 00, 0.8);
+  padding: 0.5rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(00, 00, 00, 0.5);
+  outline: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+button:not(:last-child) {
+  margin-right: 2rem;
+}

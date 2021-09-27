@@ -1,0 +1,22 @@
+.map-inputs {
+  text-align: center;
+}
+
+.map-heading {
+  margin-top: 2rem;
+}
+
+.map-form {
+  margin: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lats {
+  margin-right: 2rem;
+}
+
+.map-button {
+  margin-bottom: 2rem;
+}

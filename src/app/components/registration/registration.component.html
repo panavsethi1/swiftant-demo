@@ -1,0 +1,59 @@
+<div class="form-card">
+    <h2 class="form-card__heading">{{'cowin-registrations' | translate}}</h2>
+    <form [formGroup]='registrationForm'>
+
+        <div class="mb-3">
+            <label class="form-label" for="first-name">{{'first-name' | translate}}</label>
+            <input class="form-control" id="first-name" type="text" [placeholder]="'first-name' | translate"
+                formControlName='firstName'>
+            <p *ngIf='submitted && registrationForm.controls.firstName.errors' style="color: red; margin-top: 0.25rem;">
+                *{{'required'|translate}}</p>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="last-name">{{'last-name' | translate}}</label>
+            <input class="form-control" id="last-name" type="text" [placeholder]="'last-name' | translate"
+                formControlName='lastName'>
+            <p *ngIf='submitted && registrationForm.controls.lastName.errors' style="color: red;margin-top: 0.25rem;">
+                *{{'required'|translate}}</p>
+
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="phone">{{'phone-number'|translate}}</label>
+            <input class="form-control" id="phone" type="text" [placeholder]="'phone-number'|translate"
+                formControlName='phoneNumber'>
+            <p *ngIf='submitted && registrationForm.controls.phoneNumber.errors?.required'
+                style="color: red;margin-top: 0.25rem;">
+                *{{'required'|translate}}</p>
+            <p *ngIf='submitted && (registrationForm.controls.phoneNumber.errors?.maxlength || registrationForm.controls.phoneNumber.errors?.minlength)'
+                style="color: red;margin-top: 0.25rem;">
+                {{'add-10-digits'|translate}}</p>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label" for="state">{{'state'|translate}}</label>
+            <select (change)='setDistricts($event)' class="form-control" id="state" type="text" formControlName='state'>
+                <option *ngFor='let state of states' [value]='state.state_name'>{{state.state_name}}</option>
+            </select>
+            <p *ngIf='submitted && registrationForm.controls.state.errors' style="color: red;margin-top: 0.25rem;">
+                *{{'required'|translate}}</p>
+        </div>
+        <div *ngIf="registrationForm.controls.state.value != ''" class="mb-3">
+            <label class="form-label" for="district">{{'district' | translate}}</label>
+            <select class="form-control" id="district" type="text" formControlName='district'>
+                <option *ngFor='let dist of districts' [value]="dist">{{dist.district_name}}</option>
+            </select>
+            <p *ngIf='submitted && registrationForm.controls.district.errors' style="color: red;margin-top: 0.25rem;">
+                *{{'required'|translate}}</p>
+        </div>
+        <div class="form-card__btn-box">
+            <button type="submit" class="btn btn-secondary form-card__btn"
+                (click)='handleSubmit()'>{{"submit"|translate}}</button>
+        </div>
+    </form>
+
+
+
+</div>

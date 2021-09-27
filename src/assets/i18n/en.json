@@ -1,0 +1,20 @@
+{
+  "registrations": "Registrations",
+  "movies": "Movies",
+  "maps": "Maps",
+  "cowin-registrations": "Cowin Registrations",
+  "first-name": "First Name",
+  "last-name": "Last Name",
+  "phone-number": "Phone Number",
+  "state": "State",
+  "district": "District",
+  "required": "Required",
+  "add-10-digits": "Please add your 10 digit phone number",
+  "submit": "Submit",
+  "image": "Image",
+  "title": "Title",
+  "rating": "Rating",
+  "release-date": "Release Date",
+  "overview": "Overview",
+  "edit-overview": "Edit Overview"
+}

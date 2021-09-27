@@ -1,0 +1,20 @@
+{
+  "registrations": "Inscriptions",
+  "movies": "Films",
+  "maps": "Carte",
+  "cowin-registrations": "Inscriptions Cowin",
+  "first-name": "Prénom",
+  "last-name": "Nom de famille",
+  "phone-number": "Numéro de téléphone",
+  "state": "État",
+  "district": "Quartier",
+  "required": "Obligatoire",
+  "add-10-digits": "Veuillez ajouter votre numéro de téléphone à 10 chiffres",
+  "submit": "Soumettre",
+  "image": "Image",
+  "title": "Titre",
+  "rating": "Évaluation",
+  "release-date": "Date de sortie",
+  "overview": "Aperçu",
+  "edit-overview": "Modifier l'aperçu"
+}

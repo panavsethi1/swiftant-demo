@@ -1,0 +1,20 @@
+{
+  "registrations": "पंजीकरण",
+  "movies": "चलचित्र",
+  "maps": "नक्शा",
+  "cowin-registrations": "CoWIN पंजीकरण",
+  "first-name": "पहला नाम",
+  "last-name": "उपनाम",
+  "phone-number": "फ़ोन नंबर",
+  "state": "राज्य",
+  "district": "जिला",
+  "required": "आवश्यक",
+  "add-10-digits": "कृपया अपना १० अंकों का फ़ोन नंबर डालें",
+  "submit": "आगे बढ़ें",
+  "image": "छवि",
+  "title": "शीर्षक",
+  "rating": "रेटिंग",
+  "release-date": "रिलीज़ की तारीख",
+  "overview": "अवलोकन",
+  "edit-overview": "अवलोकन बदलें"
+}
